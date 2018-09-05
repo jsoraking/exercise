@@ -1,0 +1,36 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  z-index: 1;
+  margin-left: -600px;
+  padding: 1rem;
+
+  //로고
+  .hd-logo {
+    float: left;
+    width: 70px;
+    img {
+      width: 100%;
+    }
+  }
+  .hd-menu {
+    float: right;
+  }
+  .hd-menu__item {
+    display: inline-block;
+    float: left;
+    margin-left: 1rem;
+    padding-top: 1rem;
+    line-height: 1.6;
+
+    &:nth-child(1) {
+      margin-left: 0;
+    }
+  }
+  &:after {
+    display: block;
+    content: '';
+    clear: both;
+  }
+}
