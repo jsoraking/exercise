@@ -1,3 +1,83 @@
 .footer {
+  position: relative;
+  background-color: #1d1f20;
+  //border-top: 1px solid #181a1b;
 
+  //메뉴
+  .ft-menu {
+    padding-top: 3rem;
+    .ft-menu__item {
+      float: left;
+      a {
+        font-size: 13px;
+        color: #f3f4f4;
+      }
+      &:after {
+        display: inline-block;
+        width: 1px;
+        height: 10px;
+        margin: 0 8px;
+        content: '';
+        background-color: #898a8a;
+      }
+
+      &:nth-last-child(1):after {
+        content: none;
+      }
+    }
+    &:after {
+      display: block;
+      content: '';
+      clear: both;
+    }
+  }
+  //주식회사 카카오페이
+  .company-name {
+    margin-top: 23px;
+    font-size: .85rem;
+    color: #959595;
+  }
+
+  //회사정보
+  .company-about {
+    margin-top: 14px;
+    color: #515151;
+    .company-about__item {
+      float: left;
+      font-size: .85rem;
+      color: #555;
+      &:after {
+        display: inline-block;
+        width: 1px;
+        height: 10px;
+        margin: 0 8px;
+        content: '';
+        background-color: #414243;
+      }
+      &:nth-last-child(1):after {
+        content: none;
+      }
+    }
+    &:after {
+      display: block;
+      content: '';
+      clear: both;
+    }
+  }
+
+  //카피라이트
+  .copyright {
+    padding-bottom: 3rem;
+    font-size: .85rem;
+    color: #555;
+  }
+
+  .ft-logo {
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    width: 60px;
+    height: 18px;
+    margin-left: 20%;
+  }
 }

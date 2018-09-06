@@ -6,7 +6,6 @@
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   <script type="text/javascript" src="./js/vender/fullpage.js"></script>
   <script type="text/javascript" src="./js/vender/easings.min.js"></script>
-  <script type="text/javascript" src="./js/index.js"></script>
   <link rel="stylesheet" href="css/vender/jquery.fullpage.2.9.6.css">
   <link rel="stylesheet" href="css/index.css">
 </head>
@@ -22,7 +21,7 @@
     </ul>
   </div>
 </div>
-<div class="container  fullpage-wrap">
+<div class="container fullpage-wrap">
   <!-- 첫번째: 당신을 닮다 생활을 담다 -->
   <section class="pay-resemble section" data-anchor="slide1">
     <div class="qrcode-bottom-band">
@@ -46,15 +45,16 @@
   <!-- 두번째: 청구서, 놓쳐왔던 생활 습관을 담다 -->
   <section class="pay-bill section" data-anchor="slide2">
     <div class="inner">
-      <div class="pay-bill-wrap">
-        <small class="pay-bill-time">
+      <div class="section-bg"></div>
+      <div class="pay-bill-txt pay-txt">
+        <small class="pay-time">
           08: 40 am
         </small>
-        <p class="pay-bill__title">
+        <p class="pay-title">
           청구서, <br/>
           놓쳐왔던 생활 습관을 담다.
         </p>
-        <p class="pay-bill-dsc">
+        <p class="pay-dsc">
           바쁜 출근 준비로 우편함 한번 열어볼 여유 없는 아침. <br/>
           난 그래도 걱정 없다. 카톡으로 확인하고 납부하니까.
         </p>
@@ -66,113 +66,130 @@
   <!-- 셋번째: 인증, 안전을 넘어 편의성을 담다. -->
   <section class="pay-safety section" data-anchor="slide3">
     <div class="inner">
-      <small class="pay-safety-time">
-        10: 38 am
-      </small>
-      <p class="pay-safety__title">
-        인증, <br/>
-        안전을 넘어 편의성을 담다.
-      </p>
-      <p class="pay-safety-dsc">
-        오전부터 처리할 일이 산더미지만 프로답게! <br/>
-        중요문건 확인은 별도의 설치 없이도 안전하게 비밀번호 입력만으로 <br/>
-        손쉽게 처리한다. <br/>
-      </p>
-      <a href="#" class="pay-safety__btn btn">인증 자세히보기</a>
+      <div class="section-bg"></div>
+      <div class="pay-safety-txt pay-txt">
+        <small class="pay-time">
+          10: 38 am
+        </small>
+        <p class="pay-title">
+          인증, <br/>
+          안전을 넘어 편의성을 담다.
+        </p>
+        <p class="pay-dsc">
+          오전부터 처리할 일이 산더미지만 프로답게! <br/>
+          중요문건 확인은 별도의 설치 없이도 안전하게 비밀번호 입력만으로 <br/>
+          손쉽게 처리한다. <br/>
+        </p>
+        <a href="#" class="pay-safety__btn btn">인증 자세히보기</a>
+      </div>
     </div>
   </section>
 
   <!-- 네번째: 송금, 즐거운 만남에 편리함을 담다. -->
   <section class="pay-enjoy section" data-anchor="slide4">
     <div class="inner">
-      <small class="pay-enjoy-time">
-        12: 10 pm
-      </small>
-      <p class="pay-enjoy__title">
-        송금,<br/>
-        즐거운 만남에 편리함을 담다.
-      </p>
-      <p class="pay-enjoy-dsc">
-        지인들과 즐거운 점심식사! 맛있게 먹고 밥값 정산 할 땐<br/>
-        계좌번호 묻지 않고 이젠 카톡에서 바로 보낸다.
-      </p>
-      <a href="#" class="pay-enjoy__btn btn">송금 자세히보기</a>
+      <div class="section-bg"></div>
+      <div class="pay-enjoy-txt pay-txt">
+        <small class="pay-time">
+          12: 10 pm
+        </small>
+        <p class="pay-title">
+          송금,<br/>
+          즐거운 만남에 편리함을 담다.
+        </p>
+        <p class="pay-dsc">
+          지인들과 즐거운 점심식사! 맛있게 먹고 밥값 정산 할 땐<br/>
+          계좌번호 묻지 않고 이젠 카톡에서 바로 보낸다.
+        </p>
+        <a href="#" class="pay-enjoy__btn btn">송금 자세히보기</a>
+      </div>
     </div>
   </section>
 
   <!-- 다섯번째: 결제, 막힘없는 시원함을 담다. -->
   <section class="pay-cool section" data-anchor="slide5">
     <div class="inner">
-      <small class="pay-cool-time">
-        15: 20 pm
-      </small>
-      <p class="pay-cool__title">
-        결제,<br/>
-        막힘없는 시원함을 담다.
-      </p>
-      <p class="pay-cool-dsc">
-        단 하나 남은 신상 가을 의류,<br/>
-        카카오페이로 단숨에 결제하고 GET 한다.
-      </p>
-      <a href="#" class="pay-cool__btn btn">결제 자세히보기</a>
+      <div class="section-bg"></div>
+      <div class="pay-cool-txt pay-txt">
+        <small class="pay-time">
+          15: 20 pm
+        </small>
+        <p class="pay-title">
+          결제,<br/>
+          막힘없는 시원함을 담다.
+        </p>
+        <p class="pay-dsc">
+          단 하나 남은 신상 가을 의류,<br/>
+          카카오페이로 단숨에 결제하고 GET 한다.
+        </p>
+        <a href="#" class="pay-cool__btn btn">결제 자세히보기</a>
+      </div>
+
     </div>
   </section>
 
   <!-- 여섯번째: 멤버십, 알뜰하게 포인트를 담다.-->
   <section class="pay-point section" data-anchor="slide6">
     <div class="inner">
-      <small class="pay-point-time">
-        19: 5 pm
-      </small>
-      <p class="pay-point__title">
-        멤버십,<br/>
-        알뜰하게 포인트를 담다.
-      </p>
-      <p class="pay-point-dsc">
-        퇴근 후 마트에서 한아름 장을 보니 만만치 않은 비용..<br/>
-        알뜰히 포인트 적립하고 쿠폰으로 비용도 세이브한다.
-      </p>
-      <a href="#" class="pay-point__btn btn">멤버십 자세히보기</a>
+      <div class="section-bg"></div>
+
+      <div class="pay-point-txt pay-txt">
+        <small class="pay-time">
+          19: 5 pm
+        </small>
+        <p class="pay-title">
+          멤버십,<br/>
+          알뜰하게 포인트를 담다.
+        </p>
+        <p class="pay-dsc">
+          퇴근 후 마트에서 한아름 장을 보니 만만치 않은 비용..<br/>
+          알뜰히 포인트 적립하고 쿠폰으로 비용도 세이브한다.
+        </p>
+        <a href="#" class="pay-point__btn btn">멤버십 자세히보기</a>
+      </div>
     </div>
   </section>
 
   <!-- 마지막: 카톡에서 시작되는 생활의 변화, 지금만나보세요 -->
-  <section class="pay-katalk section" data-anchor="slide7">
+  <section class="pay-katalk section  fp-auto-height" data-anchor="slide7">
     <div class="inner">
-      <p class="pay-katalk__title">
-        카톡에서 시작되는 생활의 변화,<br/>
-        지금 만나보세요!
-      </p>
-      <span class="pay-katalk__dsc">
+      <div class="pay-katalk__txt">
+        <p class="pay-katalk__title">
+          카톡에서 시작되는 생활의<br/>
+          변화,<br/>
+          지금 만나보세요!
+        </p>
+        <span class="pay-katalk__dsc">
 					카카오톡 > 더보기에서<br/>
 					카카오페이를 만나볼 수 있습니다.
 				</span>
-      <img src="./img/thumb_02.png" alt="카카오톡 이미지">
+      </div>
+      <img src="./img/thumb_02.png" alt="카카오톡 이미지" class="pay-katalk-thumb">
     </div>
   </section>
-</div>
-<div class="footer">
-  <div class="inner">
-    <ul class="ft-menu">
-      <li class="ft-menu__item"><a href="#">카카오페잊 이용약관</a></li>
-      <li class="ft-menu__item"><a href="#">전자금융거래 이용양관</a></li>
-      <li class="ft-menu__item"><a href="#">개인정보 처리방침</a></li>
-      <li class="ft-menu__item"><a href="#">안심프로젝트</a></li>
-      <li class="ft-menu__item"><a href="#">위기치반서비스이용약관</a></li>
-    </ul>
 
-    <p class="company-name">주식회사 카카오페이</p>
+  <div class="footer section fp-auto-height" data-anchor="slide8">
+    <div class="inner">
+      <ul class="ft-menu">
+        <li class="ft-menu__item"><a href="#">카카오페이 이용약관</a></li>
+        <li class="ft-menu__item"><a href="#">전자금융거래 이용양관</a></li>
+        <li class="ft-menu__item"><a href="#">개인정보 처리방침</a></li>
+        <li class="ft-menu__item"><a href="#">안심프로젝트</a></li>
+        <li class="ft-menu__item"><a href="#">위치기반서비스이용약관</a></li>
+      </ul>
+      <p class="company-name">주식회사 카카오페이</p>
+      <ul class="company-about">
+        <li class="company-about__item">경기도 성남시 분당구 판교역로 152 알파돔타워 12층</li>
+        <li class="company-about__item">대표이사 : 류영준</li>
+        <li class="company-about__item">사업자번호 : 527-88-00686</li>
+      </ul>
 
-    <ul class="compant-about">
-      <li>경기도 성남시 분당구 판교역로 152 알파돔타워 12층</li>
-      <li>대표이사 : 류영준</li>
-      <li>사업자번호 : 527-88-00686</li>
-    </ul>
+      <p class="copyright">Copyright © kakaopay corp.</p>
 
-    <p class="copyright">Copyright © kakaopay corp.</p>
-
-    <img src="./img/kakaopay_logo_gray.png" alt="카카오페이" class="ft-logo">
+      <img src="./img/kakaopay_logo_gray.png" alt="카카오페이" class="ft-logo">
+    </div>
   </div>
 </div>
+<script type="text/javascript" src="./js/index.js"></script>
 </body>
 </html>

@@ -1,16 +1,23 @@
-/*공통*/
+//공통
 .inner {
   width: 1200px;
   margin: 0 auto;
 }
-.btn {
 
+.blind {
+  display: block;
+  overflow: hidden;
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  font-size: 0;
+  line-height: 0;
+  text-indent: -9999px
 }
 
 .container {
   position: relative;
-
-  
 }
 
 //페이징버튼
@@ -36,11 +43,62 @@
   }
 }
 
+//섹션 공통
+.section {
+  position: relative;
+  background-repeat: $nor;
+  background-position: 50% 0;
+  background-size: cover;
+
+  //background-images 공통
+  .section-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    background: rgba(0, 0, 0, .3);
+  }
+
+  //텍스트 공통
+  .pay-txt {
+    position: absolute;
+    left: 50%;
+    top: 30vh;
+    margin-left: -25vw;
+    .pay-time {
+      font-size: .95em;
+      font-weight: 400;
+      color: $white;
+    }
+    .pay-title {
+      margin-top: 1rem;
+      font-size: 2rem;
+      font-weight: 400;
+      color: $white;
+    }
+    .pay-dsc {
+      display: block;
+      margin-top: 49px;
+      color: $white;
+    }
+  }
+
+  //바로가기 공통
+  .btn {
+    display: inline-block;
+    margin-top: 60px;
+    padding: .8rem 2rem;
+    border-radius: 10em;
+    background-color: #ffed00;
+    font-size: .95rem;
+  }
+}
+
 //첫번째: 당신을 닮다 생활을 담다
 .pay-resemble {
   background-image: url("/kakao-pay/img/section_bg_01.jpg");
-  background-position: 50% 0;
-  background-repeat: $nor;
   //하단텍스트
   .qrcode-bottom-band {
     position: absolute;
@@ -52,9 +110,12 @@
     background-position: $center;
     background-repeat: $nor;
     .qrcode-bottom-band__txt {
-      display: block;
+      display: inline-block;
+      float: left;
       padding: 45px 0;
+      font-size: 1.15rem;
       font-weight: 400;
+      line-height: 1.7;
       b {
         font-weight: 500;
       }
@@ -65,38 +126,63 @@
 //두번째: 청구서, 놓쳐왔던 생활 습관을 담다
 .pay-bill {
   background-image: url("/kakao-pay/img/section_bg_02.jpg");
-  background-repeat: $nor;
-  background-position: $center;
+}
 
-  .pay-bill-wrap {
-    padding-left: 5rem;
-  }
+//셋번째: 인증, 안전을 넘어 편의성을 담다
+.pay-safety {
+  background-image: url("/kakao-pay/img/section_bg_03.jpg");
 
-  .pay-bill-time {
-    font-size: .95em;
-    font-weight: 400;
-    color: $white;
-  }
-  .pay-bill__title {
-    margin-top: 1rem;
-    font-size: 2rem;
-    font-weight: 400;
-    color: $white;
-  }
-  .pay-bill-dsc {
-    color: $white;
+  //텍스트
+  .pay-safety-txt {
+    padding-left: 40rem;
   }
 }
 
-//blind
-.blind {
-  display: block;
-  overflow: hidden;
-  position: absolute;
-  left: -9999px;
-  width: 1px;
-  height: 1px;
-  font-size: 0;
-  line-height: 0;
-  text-indent: -9999px
+//네번째: 송금, 즐거운 만남에 편리함을 담다
+.pay-enjoy {
+  background-image: url("/kakao-pay/img/section_bg_04.jpg");
+}
+
+//다섯번째: 결제, 막힘없는 시원함을 담다
+.pay-cool {
+  background-image: url("/kakao-pay/img/section_bg_05.jpg");
+
+  //텍스트
+  .pay-cool-txt {
+    padding-left: 40rem;
+  }
+}
+
+//여섯번째: 멤버십, 알뜰하게 포인트를 담다
+.pay-point {
+
+  background-image: url("/kakao-pay/img/section_bg_06.jpg");
+}
+
+//마지막: 카톡에서 시작되는 생활의 변화, 지금만나보세요
+.pay-katalk {
+  background-color: #242627;
+  .pay-katalk__txt {
+    padding: 110px 0 110px 110px;
+    .pay-katalk__title {
+      font-size: 22px;
+      font-weight: 300;
+      color: $white;
+    }
+    .pay-katalk__dsc {
+      display: block;
+      margin-top: 36px;
+      font-size: .85rem;
+      font-weight: 300;
+      color: #555;
+    }
+  }
+  .pay-katalk-thumb {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 285px;
+    height: 277px;
+    margin-left: -60px;
+  }
 }
